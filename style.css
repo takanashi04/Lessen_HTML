@@ -1,0 +1,53 @@
+.ContentRight {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ContentRight a {
+  text-decoration: none;
+}
+
+.Flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LogoTop {
+  margin: 5px;
+  text-align: left;
+}
+
+.Title {
+  text-align: center;
+}
+
+.Note {
+  text-align: left;
+  margin: 1px;
+}
+
+.Anaunce {
+  padding: 40px;
+}
+
+.Background {
+  height: auto;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.DocumentRequest {
+  text-decoration: none;
+}
+
+.Counseling {
+  background-color: #FFCC00;
+  padding: 20px;
+  border-radius: 80px;
+  text-decoration: none;
+}
+
+.MenuBar {
+  display: inline-block;
+}
