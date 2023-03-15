@@ -1,25 +1,95 @@
-.ContentRight {
+*{
+  box-sizing: border-box;
+} 
+
+.Header {
+  padding: 20px 0;
+}
+
+.HeaderList {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.NavHamburger {
+  cursor: pointer;
+  display: block;
+  /*position: relative;*/
+  width: 30px;
+  height: 21px;
+  z-index: 100;
+}
+
+.NavHamburgerLine {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transform: translate(0,-50%);
+  border-radius: 10px;
+  transition: top .2s,transform ,2s,opacity .3s;
+}
+
+.NavHamburgerLine :first-child {
+  top: 0;
+}
+
+.NavHamburgerLine :last-child {
+  top: 100%;
+}
+
+.Nav {
   display: flex;
   justify-content: space-between;
 }
 
-.ContentRight a {
+.NavMenu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.NavMenu a {
   text-decoration: none;
+  color: #333;
 }
 
-.Flexbox {
-  display: flex;
-  justify-content: space-between;
-}
-
-.LogoTop {
-  margin: 5px;
+.NavLogo {
+  margin-top: 20px;
   text-align: left;
 }
 
-.Title {
-  text-align: center;
+.NavLinks {
+  word-break: break-all;
+  margin-right: 40px;
 }
+
+/*.NavLink {*/
+/*  display: block;*/
+/*}*/
+
+.NavLink > span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+
+.NavLink > span:first-child {
+ font-family: 'Lato', sans-serif; 
+}
+
+.NavLink > span:last-child {
+  font-size: 10px;
+}
+
+.Title {
+  text-align: left;
+}
+
+
 
 .Note {
   text-align: left;
@@ -41,13 +111,14 @@
   text-decoration: none;
 }
 
-.Counseling {
+.Contact {
   background-color: #FFCC00;
   padding: 20px;
   border-radius: 80px;
   text-decoration: none;
+  color: #fff;
 }
 
-.MenuBar {
-  display: inline-block;
+.Contact a {
+  color: #fff;
 }

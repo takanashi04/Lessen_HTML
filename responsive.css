@@ -1,7 +1,10 @@
+/*タブレット向けレイアウト*/
 @media (max-widht: 1080px) {
   
 }
 
-@media (max-width: 670px) {
+
+/*スマホ向けレイアウト*/
+@media (max-width: 770px) {
   
 }
