@@ -37,6 +37,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+  
   .About {
     flex-direction: column;
   }
@@ -50,11 +51,10 @@
     margin-left: 0;
     width: 75%;
   }
-  
 }
 
 /*以下スマホ向けレイアウト*/
-@media (max-width: 770px) {
+@media screen and (max-width: 770px) {
   
   .HeaderNavHamburger span {
     position: absolute; /*親のpositionをrelativeにし、それを基準にこの場所が決まる*/
