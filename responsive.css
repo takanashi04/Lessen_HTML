@@ -91,9 +91,17 @@
     padding-bottom: 15px;
   }
   
+  .HeaderLogo__image--pc {
+    display: none;
+  }
+  
+  .HeaderLogo__image--sp {
+    display: block;
+  }
+  
   .HeaderContainer {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    max-width: 100%;
+    margin: 0 20px;
   }
   
   .HeaderNavHamburger span {
@@ -181,5 +189,4 @@
     margin-bottom: 0;
     width: 100%;
   }
-  
 }
