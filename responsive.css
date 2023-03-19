@@ -1,5 +1,9 @@
-/*以下タブレット向けレイアウト*/
-@media screen and (max-widht: 1080px) {
+/*以下タブレット向けレイアウト--------------------------------------*/
+@media screen and (max-width: 1080px) {
+  
+  main {
+    padding-top: 60px;
+  }
   
   .Header {
     background-color: #fff;
@@ -10,8 +14,33 @@
     position: fixed !important;
   }
   
+  .HeaderNavList {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform .5s;
+    z-index: 99;
+    background-color: rgba(0,0,0,.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+  
   .HeaderLogo {
     transition: opacity .2s;
+  }
+  
+  .HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
   }
   
   .HeaderNavHamburger__line {
@@ -53,8 +82,19 @@
   }
 }
 
-/*以下スマホ向けレイアウト*/
+
+/*以下スマホ向けレイアウト------------------------------------------*/
 @media screen and (max-width: 770px) {
+  
+  .Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .HeaderContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   
   .HeaderNavHamburger span {
     position: absolute; /*親のpositionをrelativeにし、それを基準にこの場所が決まる*/
@@ -67,4 +107,79 @@
     border-radius: 10px;
     transition: top .2s,transform ,2s,opacity .3s;
   }
+  
+  .FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+  
+  .FirstView__main-image--sp {
+    display: block;
+  }  
+  .FirstView__container  {
+    margin-top: -45vw;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: clac(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+  }
+  
+  .FirstViewContent__images {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .FirstViewContent__images img {
+    width: 27.5%;
+  }
+  
+  .FirstViewContent__images img:nth-of-type(2) {
+    width: 40%;
+  }
+  
+  .FirstViewContent__buttons {
+    flex-direction: column;
+  }
+  
+  .FirstViewContent__buttons a {
+    width: 100% !important;
+  }
+  
+  .FirstViewContent__buttons a:first-of-type {
+    margin-right: 0;
+  }
+  
+  .FirstViewContent__buttons a:last-of-type {
+    display: none;
+  }
+  
+  .About {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .About__video {
+    width: 100%;
+  }
+  
+  .About__title {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
 }
