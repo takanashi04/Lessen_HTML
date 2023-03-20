@@ -84,7 +84,7 @@
 
 
 /*以下スマホ向けレイアウト------------------------------------------*/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   
   .Header {
     padding-top: 15px;
